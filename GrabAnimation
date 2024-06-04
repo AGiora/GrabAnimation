@@ -1,0 +1,38 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class GrabAnimationFunctionScript : MonoBehaviour
+{
+
+    public Transform _gunObj, _rHandPosition, _spinePosition;
+
+
+    void Start()
+    {
+
+        _gunObj.parent = _rHandPosition;
+        _gunObj.position = _rHandPosition.position;
+        _gunObj.rotation = _rHandPosition.rotation;
+
+    }
+
+    void GrabOn()
+    {
+
+        _gunObj.parent = _rHandPosition;
+        _gunObj.position = _rHandPosition.position;
+        _gunObj.rotation = _rHandPosition.rotation;
+
+    }
+
+    void GrabOff()
+    {
+
+        _gunObj.parent = _rHandPosition;
+        _gunObj.position = _rHandPosition.position;
+        _gunObj.rotation = _rHandPosition.rotation;
+
+    }
+
+}	
